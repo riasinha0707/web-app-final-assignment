@@ -98,6 +98,15 @@ npm run preview
 2. Deploy the `dist/` folder to your hosting provider (Vercel, Netlify, etc.)
 3. Set the environment variables in your hosting provider's dashboard
 
+### Vercel Deployment
+
+**Required:** Add these environment variables in Vercel Project Settings → Environment Variables:
+
+- `VITE_SUPABASE_URL` — Your Supabase project URL
+- `VITE_SUPABASE_KEY` — Your Supabase anon (publishable) key
+
+Redeploy after adding variables. Without these, the app will load but authentication and database features will not work.
+
 ## GitHub Push
 
 1. Create a new repository on GitHub
