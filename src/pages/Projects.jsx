@@ -126,7 +126,11 @@ export default function Projects() {
   };
 
   return (
-    <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
+    <div style={{
+      maxWidth: '1200px',
+      margin: '0 auto',
+      color: 'var(--dark-text)',
+    }}>
       <h1 style={{
         margin: '0 0 24px 0',
         fontSize: '1.5rem',

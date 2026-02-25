@@ -4,7 +4,11 @@ export default function Contact() {
   const navigate = useNavigate();
 
   return (
-    <div style={{ maxWidth: '900px', margin: '0 auto' }}>
+    <div style={{
+      maxWidth: '900px',
+      margin: '0 auto',
+      color: 'var(--dark-text)',
+    }}>
       <h1 style={{
         margin: '0 0 24px 0',
         fontSize: '1.5rem',

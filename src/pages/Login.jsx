@@ -36,7 +36,15 @@ export default function Login() {
   };
 
   return (
-    <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '1.25rem' }}>
+    <form
+      onSubmit={handleSubmit}
+      style={{
+        display: 'flex',
+        flexDirection: 'column',
+        gap: '1.25rem',
+        color: 'var(--dark-text)',
+      }}
+    >
       <div>
         <label htmlFor="email" style={{
           display: 'block',

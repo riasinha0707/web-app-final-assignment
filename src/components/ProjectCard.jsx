@@ -18,7 +18,8 @@ export default function ProjectCard({ project, onEdit, onDelete }) {
         display: 'flex',
         flexDirection: 'column',
         gap: '0.75rem',
-        transition: 'transform 0.2s, box-shadow 0.2s',
+        transition: 'transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease',
+        borderLeft: '2px solid rgba(59, 130, 246, 0.7)',
       }}
     >
       <h3 style={{
@@ -32,8 +33,21 @@ export default function ProjectCard({ project, onEdit, onDelete }) {
       <p style={{ margin: 0, fontSize: '0.95rem', color: 'var(--dark-text)' }}>
         <strong>Project:</strong> {project.project_name}
       </p>
-      <p style={{ margin: 0, fontSize: '0.9rem', color: '#64748B' }}>
-        <strong>Date:</strong> {formatDate(project.booking_date)} • <strong>Time:</strong> {project.time_slot}
+      <p style={{
+        margin: 0,
+        fontSize: '0.8rem',
+        color: 'var(--dark-text)',
+        display: 'inline-flex',
+        alignItems: 'center',
+        gap: '0.5rem',
+        padding: '0.3rem 0.75rem',
+        borderRadius: '999px',
+        background: 'linear-gradient(135deg, rgba(15,23,42,0.95), rgba(30,64,175,0.85))',
+        boxShadow: '0 0 0 1px rgba(148,163,184,0.45)',
+      }}>
+        <span><strong>Date:</strong> {formatDate(project.booking_date)}</span>
+        <span style={{ opacity: 0.7 }}>•</span>
+        <span><strong>Time:</strong> {project.time_slot}</span>
       </p>
       <p style={{
         margin: 0,
